@@ -1,0 +1,33 @@
+.root {
+  padding: 0 40px 40px;
+  min-height: 100vh;
+  td,
+  th {
+    vertical-align: middle;
+  }
+}
+.title {
+  font-size: 32px;
+  color: var(--fill-low-emphasis);
+  margin-bottom: 15px;
+}
+.wrapper {
+  min-width: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+}
+th {
+  background: rgb(244, 145, 0) !important;
+  color: white;
+  white-space: nowrap !important;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}

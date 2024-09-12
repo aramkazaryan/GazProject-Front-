@@ -1,0 +1,39 @@
+.sideBarNav {
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.sideBarNav:hover {
+  overflow-y: auto;
+}
+
+.sideBarNav::-webkit-scrollbar {
+  width: 0.3rem !important;
+  height: 0.3rem !important;
+  background-color: transparent;
+}
+
+.addButton {
+  span {
+    display: flex;
+    align-items: center;
+  }
+}
+.deleteIcon {
+  z-index: 999;
+}
+.collapsedDiv {
+  height: 100%;
+  width: 1px;
+  background: rgb(244, 145, 0);
+  position: relative;
+}
+.collapsedIcon {
+  position: absolute;
+  top: 70px;
+  left: -15px;
+  z-index: 999;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}

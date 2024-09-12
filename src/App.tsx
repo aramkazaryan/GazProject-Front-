@@ -1,12 +1,20 @@
 import { Route, Routes } from "react-router-dom";
-import './App.scss';
-import Sidebar from "./Sidebar";
+import Sidebar from "./components/Sidebar";
+import Tables from "components/Tables";
+import styles from "./App.module.scss";
 
 function App() {
   return (
-   <Routes>
-     <Route path="/*" element={<Sidebar/>}/>
-   </Routes>
+    <div className={styles.root}>
+      <div className={styles.sidebar}>
+        <Sidebar />
+      </div>
+      <div className={styles.content}>
+        <Routes>
+          <Route path="/address" element={<Tables />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
 

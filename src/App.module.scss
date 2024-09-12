@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.drawer {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.root {
+  background-color: var(--fill-base-light);
+  display: flex;
+  min-height: 100vh;
+  min-width: fit-content;
+  background-color: #f5f7fa;
+}
+.content {
+  width: calc(100% - 120px);
+  margin-top: 40px;
+}

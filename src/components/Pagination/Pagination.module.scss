@@ -1,0 +1,33 @@
+.paginationWrapper {
+  padding: 5rem 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+.separator {
+  width: 1rem;
+  margin: 0.5rem 0.25rem 0;
+}
+.pageItem {
+  background: transparent;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.25rem;
+  border-radius: 5px;
+  color: rgb(157, 163, 172);
+  &:focus {
+    outline: 0;
+  }
+}
+.active {
+  background-color: rgb(247, 150, 51);
+  color: #ffffff;
+}
+.sides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    text-decoration: none;
+  }
+}
